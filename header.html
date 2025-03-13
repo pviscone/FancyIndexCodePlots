@@ -7,5 +7,30 @@
   <title></title>
   <link rel="stylesheet" type="text/css" href="/fancy-index/style.css">
   <style>img[src$=".svg"] { width: 16px; }</style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // List of file extensions to apply view_code.php to
+        const codeExtensions = ["py", "cpp", "c", "h", "hpp", "java", "js", "ts", "html", "css", "php", "sh", "json", "xml", "yaml", "yml", "md", "sql", "lua", "pl", "rb", "cs", "go", "swift", "rs"];
+
+        let hasPlots = false;
+        let currentDir = window.location.pathname; // Get current directory path 
+        
+        // Modify links for code files
+        document.querySelectorAll("a").forEach(link => {
+            const url = new URL(link.href, window.location.origin);
+            const ext = url.pathname.split('.').pop().toLowerCase();
+
+            if (codeExtensions.includes(ext)) {
+                link.href = "/fancy-index/view_code.php?file=" + encodeURIComponent(url.pathname);
+            }
+            if (ext === "root" || ext === "png") {
+                hasPlots = true;
+            }
+        });
+        // If the directory contains plots, reload the page with plots.php as the index
+        // TODO Implement plots.php
+
+    });
+  </script>
 </head>
 <body>
