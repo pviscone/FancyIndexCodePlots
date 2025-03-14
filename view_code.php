@@ -33,8 +33,8 @@ if (isset($_GET['raw'])) {
 $extension_map = [
     'py'   => 'python', 'cpp'  => 'cpp', 'c'    => 'c', 'h'    => 'cpp', 'hpp'  => 'cpp',
     'java' => 'java', 'js'   => 'javascript', 'ts'   => 'typescript',
-    'css'  => 'css', 'sh'   => 'bash', 'bat'  => 'dos', 'md'   => 'markdown',
-    'json' => 'json', 'xml'  => 'xml', 'yml'  => 'yaml', 'yaml' => 'yaml', 'rs'   => 'rust',
+    'css'  => 'css', 'sh'   => 'bash', 'bat'  => 'dos', 'md'   => 'markdown', 
+    'xml'  => 'xml', 'yml'  => 'yaml', 'yaml' => 'yaml', 'rs'   => 'rust',
     'go'   => 'go', 'swift'=> 'swift', 'kt'   => 'kotlin', 'm'    => 'objectivec', 'r'    => 'r',
     'sql'  => 'sql', 'lua'  => 'lua', 'pl'   => 'perl', 'rb'   => 'ruby', 'cs'   => 'csharp',
     'asm'  => 'x86asm'
