@@ -37,7 +37,7 @@ $extension_map = [
     'xml'  => 'xml', 'yml'  => 'yaml', 'yaml' => 'yaml', 'rs'   => 'rust',
     'go'   => 'go', 'swift'=> 'swift', 'kt'   => 'kotlin', 'm'    => 'objectivec', 'r'    => 'r',
     'sql'  => 'sql', 'lua'  => 'lua', 'pl'   => 'perl', 'rb'   => 'ruby', 'cs'   => 'csharp',
-    'asm'  => 'x86asm'
+    'asm'  => 'x86asm', "tcl" => "tcl", "vhd" => "vhdl", "v" => "v", "directive" => "xml", "aps" => "xml"
 ];
 
 // Get file extension and determine language
